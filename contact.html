@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+    </head>
+    <body>
+        <form action="/send_contact" method="post">
+
+            <fieldset>
+                <legend>Pour nous contacter veuillez remplir le formulaire : </legend>
+
+                <div>
+                    <label for="nom_utilisateur">Nom</label>
+                    <input type="text" name="nom" id="nom_utilisateur" required>
+                </div>
+                <div>
+                    <label for="prenom_utilisateur">Prénom</label>
+                    <input type="text" name="prenom" id="prenom_utilisateur"required>
+                </div>
+                <div>
+                    <label for="email_utilisateur">Email</label>
+                    <input type="email" name="email" id="email_utilisateur" required>
+                </div>
+                <div>
+                    <label for="tel_utilisateur">Numéro de téléphone</label>
+                    <input type="tel" name="telephone" id="tel_utilisateur">
+                </div>
+                <div>
+                    <label for="contact_utilisateur">Canal de contact préféré</label>
+                    <select name="channel" id="contact_utilisateur" multiple required>
+                        <option value="email">Email</option>
+                        <option value="telephone">Téléphone</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea rows="8" cols="50" name="message" id="message" required></textarea>
+                </div>
+        
+
+            <button type="reset">Éffacer</button>
+            <button type="submit">Valider</button>
+            </fieldset>
+
+        </form>
+          
+        <p><a href="index.html">Home</a></p>
+        
+    </body>
+</html>
